@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(180, 219, 219);
+    font-family: serif;
+    font-size: 20px;
+}
+img {
+    border-radius: 50%;
+}
+.personal-pic {
+    float: left;
+    margin-right: 5px;
+}
+h4 {
+    color: rgb(28, 126, 85);
+}
+h2 {
+    color: rgb(70, 22, 22);
+}
+.personal-info {
+    padding-top: 20px;
+    margin-left: 50px;
+}
+.container {
+    padding-top: 5%;
+}
+
+}
