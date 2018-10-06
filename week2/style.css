@@ -1,0 +1,116 @@
+body {
+  background-color: aqua;
+  border: 1em double blue;
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2em;
+  text-align: center;
+  display: block;
+}
+
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(61, 4, 4);
+  margin: 10px;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  text-align: center;
+}
+
+.grid-item {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  text-align: center;
+}
+  
+@media screen and (max-width: 400px) {
+  img {
+  max-width: 100%;
+  height: auto;
+  }
+  
+#grid-floats .grid-item:first-child {
+  float: left;
+  width: 100%;
+ }
+  
+#grid-floats .grid-item {
+  float: left;
+  width: 50%;
+  }
+}
+  
+@media (min-width: 400px) and (max-width: 800px) {
+  img {
+  max-width: 100%;
+  height: auto;
+}
+  
+#grid-floats .grid-item:first-child {
+  float: left;
+  width: 50%;
+  }
+  
+#grid-floats .grid-item {
+  float: left;
+  width: 33%;
+  }
+}
+  
+  @media screen and (min-width: 800px) {
+  img {
+  max-width: 100%;
+  height: auto;
+  }
+  
+  #grid-floats .grid-item:first-child {
+  float: left;
+  width: 50%;
+  }
+  
+  #grid-floats .grid-item {
+  float: left;
+  width: 25%;
+  }
+}
+  
+  
+  
+#grid-flex .grid-item:first-child {
+  max-width: 100%;
+}
+  
+#grid-flex .grid-item {
+  flex: 50%;
+  max-width: 50%;
+}
+  
+  
+  
+#grid-flex {
+  display: flex;
+  padding: 0 4px;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+  #grid-flex .grid-item:first-child {
+  flex: 45%;
+  padding: 0 4px;
+  }
+  
+  #grid-flex .grid-item {
+  flex: 22.5%;
+  padding: 0 4px;
+}
